@@ -4,6 +4,7 @@
   <h3>Email : {{ email }}</h3>
   <h3>Mobile : {{ mobile }}</h3>
   <h3>Address : {{ "Chennai" }}</h3>
+  <h3>{{ getData() }}</h3>
 
 </template>
 
@@ -22,6 +23,12 @@ export default {
         return Address
       }
 
+  },
+  getData(){
+    return {
+    hai: 'hello',
+    hi: 'c u',
+    }
   },
   props: {
     msg: String
