@@ -4,6 +4,7 @@
   <eventsPart></eventsPart>
   <fieldWar />
   <loginForm/>
+  <CheckBox/>
 </template>
 
 <script>
@@ -11,6 +12,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import eventsPart from './components/events.vue'
 import fieldWar from './components/field.vue';
 import loginForm from './components/login.vue'
+import CheckBox from './components/CheckBox.vue';
 
 
 export default {
@@ -19,7 +21,8 @@ export default {
     HelloWorld,
     eventsPart,
     fieldWar,
-    loginForm
+    loginForm,
+    CheckBox
   }
 }
 </script>
