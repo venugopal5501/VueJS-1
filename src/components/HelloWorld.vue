@@ -4,7 +4,8 @@
   <h3>Email : {{ email }}</h3>
   <h3>Mobile : {{ mobile }}</h3>
   <h3>Address : {{ "Chennai" }}</h3>
-  <h3>{{ getData() }}</h3>
+  <h4>{{ get().hai }}{{ get().hi }}{{ get().Disp_email }}</h4>
+  <h5>Sum of 10+10 is {{ 10+10 }}</h5>
 
 </template>
 
@@ -18,33 +19,33 @@ export default {
       mobile: '123456789',
     }
   },
-  methods:{
+  methods: {
     getAddress(Address) {
-        return Address
+      return Address
+    },
+    get() {
+      return {
+        hai: 'hello',
+        hi: ' c u',
+        Disp_email: this.email,
       }
+    },
+    // // props: {
+    // //   msg: String
+    // // }
 
-  },
-  getData(){
-    return {
-    hai: 'hello',
-    hi: 'c u',
-    }
-  },
-  props: {
-    msg: String
   }
 
-    
 
-    }
-  
-  // getata(){
-  //   return {
-  //   hai:'hi',
-  //   hello : 'hell'
-  //   }
-  // },
-  
+}
+
+// getata(){
+//   return {
+//   hai:'hi',
+//   hello : 'hell'
+//   }
+// },
+
 
 </script>
 
