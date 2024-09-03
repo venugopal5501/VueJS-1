@@ -9,7 +9,7 @@
     <input type="checkbox" id="C" value="C" v-model="tech">
     <h2>Profession</h2>
     <label for="student">Student</label>
-    <input type="radio" value="student" id="student" v-model="profession">
+    <input type="radio" value="Student" id="student" v-model="profession">
     <label for="Developer">Developer</label>
     <input type="radio" value="Developer" id="Developer" v-model="profession">
     <h2>Technology : {{ tech }}</h2>

@@ -3,8 +3,11 @@
   <HelloWorld />
   <eventsPart></eventsPart>
   <fieldWar />
-  <loginForm/>
-  <CheckBox/>
+  <loginForm />
+  <CheckBox />
+  <ifElse />
+  <loopJs />
+
 </template>
 
 <script>
@@ -13,6 +16,8 @@ import eventsPart from './components/events.vue'
 import fieldWar from './components/field.vue';
 import loginForm from './components/login.vue'
 import CheckBox from './components/CheckBox.vue';
+import ifElse from './components/if-else.vue';
+import loopJs from './components/loop.vue';
 
 
 export default {
@@ -22,7 +27,9 @@ export default {
     eventsPart,
     fieldWar,
     loginForm,
-    CheckBox
+    CheckBox,
+    ifElse,
+    loopJs
   }
 }
 </script>
