@@ -7,6 +7,9 @@
   <CheckBox />
   <ifElse />
   <loopJs />
+  <childParent names="qwerty" />
+  <childParent name="name1" :data="user" :getData="getData" />
+
 
 </template>
 
@@ -18,7 +21,7 @@ import loginForm from './components/login.vue'
 import CheckBox from './components/CheckBox.vue';
 import ifElse from './components/if-else.vue';
 import loopJs from './components/loop.vue';
-
+import childParent from './components/child.vue';
 
 export default {
   name: 'App',
@@ -29,7 +32,22 @@ export default {
     loginForm,
     CheckBox,
     ifElse,
-    loopJs
+    loopJs,
+    childParent
+  },
+  data() {
+    return {
+      name1: 'Digital',
+      user: {
+        name: 'venugopal',
+        email: 'hai123'
+      }
+    }
+  },
+  methods:{
+    getData(){
+      alert("Function Called")
+    }
   }
 }
 </script>
