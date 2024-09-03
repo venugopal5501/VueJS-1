@@ -1,16 +1,19 @@
 <template>
   <img alt="Vue logo" src="./assets/check.png" width="100">
-  <HelloWorld msg="Welcome to Digital" />
+  <HelloWorld />
+  <eventsPart></eventsPart>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import eventsPart from './components/events.vue'
 
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
+    eventsPart,
   }
 }
 </script>

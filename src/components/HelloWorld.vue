@@ -1,11 +1,12 @@
 <template>
   <h1>{{ msg }}</h1>
-  <h2>Home Component length of digital is {{ "Digital".length }}</h2>
+  <h2 v-on:mousemove="getConsole()">Home Component length of digital is {{ "Digital".length }}</h2>
   <h3>Email : {{ email }}</h3>
   <h3>Mobile : {{ mobile }}</h3>
   <h3>Address : {{ "Chennai" }}</h3>
   <h4>{{ get().hai }}{{ get().hi }}{{ get().Disp_email }}</h4>
-  <h5>Sum of 10+10 is {{ 10+10 }}</h5>
+  <h5>Sum of 10+10 is {{ 10 + 10 }}</h5>
+  
 
 </template>
 
@@ -17,6 +18,8 @@ export default {
     return {
       email: 'venugopal@gmail.com',
       mobile: '123456789',
+      count: 0,
+      
     }
   },
   methods: {
@@ -28,11 +31,13 @@ export default {
         hai: 'hello',
         hi: ' c u',
         Disp_email: this.email,
+        
       }
     },
     // // props: {
     // //   msg: String
     // // }
+    
 
   }
 
