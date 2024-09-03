@@ -27,10 +27,7 @@ export default {
         getDouble() {
             alert('Double click function called');
         },
-        getConsole() {
-            // document.write("yes")
-            console.log("Event Fired")
-        },
+
         getcount() {
 
             this.count = this.count + 1;

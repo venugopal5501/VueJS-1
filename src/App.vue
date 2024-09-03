@@ -2,11 +2,15 @@
   <img alt="Vue logo" src="./assets/check.png" width="100">
   <HelloWorld />
   <eventsPart></eventsPart>
+  <fieldWar />
+  <loginForm/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import eventsPart from './components/events.vue'
+import fieldWar from './components/field.vue';
+import loginForm from './components/login.vue'
 
 
 export default {
@@ -14,6 +18,8 @@ export default {
   components: {
     HelloWorld,
     eventsPart,
+    fieldWar,
+    loginForm
   }
 }
 </script>
